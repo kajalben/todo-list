@@ -1,0 +1,210 @@
+.todo-boxs{
+    min-height: 80vh; 
+    width: 100%;
+    background: url("../img/black-gold.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.container{
+    width: 80%;
+    padding-top: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.box{
+    max-width: 250px;
+    padding: 10px;
+    margin: 10px;
+    background-color:rgb(255,255,255, 0.5);
+    color: white;
+    /* transform: skewY(1deg); */
+
+}
+.box-title{
+    background-color: black;
+    padding: 5px;
+    /* transform: skewY(1deg); */
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-name{
+    background-image: linear-gradient(to bottom,  gold, rgb(190, 230, 82) ,gold);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    /* text-shadow: 5px 5px 20px black; */
+    
+}
+
+.cards{
+    height: auto;
+    max-height: 400px;
+    min-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.card{  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background:  rgba(37, 36, 34, 0.9);
+    color: white;
+    margin: 10px auto 0 auto;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+.card-text {
+    width: 100%;
+    cursor: pointer;
+    max-height: 400px;
+    white-space: nowrap; 
+    /* text-overflow : ellipsis; */
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .card-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  textarea{
+      width: 100%;
+      padding: 0.3em;
+      border-radius: 3px;
+
+  }
+
+  .todo-form{
+    width: 400px;
+    background-color: rgba(37, 36, 34, 0.9);
+    margin: auto;
+    padding: 20px;
+    position: absolute;
+    color: blanchedalmond;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(110,100,94);
+    border-radius: 6px;
+    display: none;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.add{
+    font-size: 2em;
+    color:  rgb(190, 230, 82);
+}
+.edit{
+    font-size: 1em;
+    color: rgb(190, 230, 82);
+    padding-right: 3px;
+}
+
+.delete{
+    font-size: 1em;
+    color:   rgb(247, 112, 112);
+}
+
+.close{
+    width: 20px;
+    float:right;
+    font-size: 2em;
+    padding: 10px 0;
+    margin-right: 12px;
+    color:  rgb(247, 112, 112);
+    
+}
+
+.greenH:hover{
+    color: rgb(187, 255, 0);
+}
+
+.redH:hover{
+    color:  rgb(255, 0, 0);
+}
+
+.add-card-button{
+    font-size: 1.2em;
+    background-color:  rgb(190, 230, 82);
+    border: 1px solid rgb(12, 236, 12);
+    border-radius: 5px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.add-card-button:hover{
+    background-color: rgb(187, 255, 0);
+}
+
+
+.active{
+    display: block !important;
+}
+
+@media all and (max-width : 992px){
+    body{
+        font-size: 14px !important;
+    }
+    .container{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .cards{
+        max-height: 200px !important;
+        min-height: 200px !important
+    }
+    .todo-form{
+        width: 50%;
+    }
+    .hero img {
+        width: 100px;
+    }
+}
+
+@media all and (max-width : 688px){
+    body{
+        font-size: 12px !important;
+    }
+    .container{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        max-height: 750px;
+        min-height: 550px;
+    }
+    .todo-form{
+        width: 80%;
+    }
+    .hero img {
+        width: 80px;
+    }
+   
+}
+
+
+
+
+
+
+

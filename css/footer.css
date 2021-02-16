@@ -1,0 +1,68 @@
+
+.foot {
+    margin: 0;
+    padding: 0;
+    height: 20%;
+    background-image: url("../img/images/blackbord.jpg");
+}
+
+.feet {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    color: #f8f1f1;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: bold;
+    font-size: 1.20em;
+}
+
+.firstcol, .secondcol {
+    margin-top: 2%;
+}
+
+.firstcol {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 2%;
+}
+
+.copyright {
+    text-align: center;
+    color: gold;
+    margin-top: 2%;
+}
+
+.button {
+    border: 2px solid gold;
+    color: #f8f1f1;
+    line-height: 2.5;
+    width: 180%;
+    text-align: center;
+    background: transparent;    
+    font-family: 'Yusei Magic', sans-serif;;
+    font-weight: bold;
+    font-size: 1.30em;   
+    margin-top: 5%;                  
+}
+
+.button:hover {
+    background: gold;
+    color: #f8f1f1;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .feet {
+        display: block;
+    }
+    .button {
+        width: 100%;
+    }
+}
